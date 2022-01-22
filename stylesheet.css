@@ -1,4 +1,37 @@
+/*The CSS language has rules to control which selector is stronger in the event of a conflict. These rules are called "cascade and specificity". 
+
+Later styles replace conflicting styles that appear earlier in the stylesheet. This is the "cascade rule".
+*/
+
 p {
-    color: red;
-  }
-  
+  color: red;
+}
+
+/*There are times when you will want something to look different based on where it is in the document. There are a number of selectors that can help you here, but for now we will look at just a couple. 
+
+The descendant combinator, which takes the form of a space between two other selectors.
+
+This selector will select any <em> element that is inside (a descendant of) an <li>.
+*/
+
+li em {
+  color: rebeccapurple;
+}
+
+/*So in your example document, you should find that the <em> in the third list item is now purple, but the one inside the paragraph is unchanged.
+Something else you might like to try is styling a paragraph when it comes directly after a heading at the same hierarchy level in the HTML. To do so place a + (an adjacent sibling combinator) between the selectors.
+Try adding this rule to your stylesheet as well:
+*/
+
+h1 + p {
+  font-size: 200%;
+}
+
+/*A class is rated as being more specific, as in having more specificity than the element selector, so it cancels the other conflicting style declaration.
+*/
+
+.levelOne{
+  background-color: coral;
+  font-size: 300%;
+}
+

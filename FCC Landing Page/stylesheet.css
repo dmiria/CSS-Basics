@@ -1,0 +1,52 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+  text-align: right;
+  padding-top: 10px; 
+}
+
+a{
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+#page-wrapper{
+  padding: 100px;
+  
+}
+
+#pricing{
+  display: flex;
+}
+
+#pricing > div{
+  
+  text-align: center;
+  width:100%;
+  margin: 10px;
+  
+}
+
+li{
+  list-style:none;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px){
+  
+}
